@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.10",
+	"EngineAssociation": "4.11",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -8,6 +8,18 @@
 			"Name": "BattleTank",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "CreaturePackPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/offers/442925bb7f9541319366ab2d902c0c45"
+		},
+		{
+			"Name": "SkookumScript",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/offers/38694f554c2c4b9f84c585256d509481"
 		}
 	]
 }
