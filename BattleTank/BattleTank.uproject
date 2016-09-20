@@ -7,7 +7,10 @@
 		{
 			"Name": "BattleTank",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -20,6 +23,11 @@
 			"Name": "SkookumScript",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/offers/38694f554c2c4b9f84c585256d509481"
+		},
+		{
+			"Name": "VaRestPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/offers/e47be161e7a24e928560290abd5dcc4f"
 		}
 	]
 }
