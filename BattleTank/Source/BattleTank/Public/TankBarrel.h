@@ -1,0 +1,29 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "Components/StaticMeshComponent.h"
+#include "TankBarrel.generated.h"
+
+/**
+ * 
+ */
+UCLASS(meta = (BlueprintSpawnableComponent))   // This anotation let's you add this class to the Blueprint Script - by adding "hidecategories = (Collision)" you can hide sections in the BP Details
+class BATTLETANK_API UTankBarrel : public UStaticMeshComponent
+{
+	GENERATED_BODY()
+	
+public:
+	void Elevate(float DegreesPerSeconds);
+
+
+private:
+	UPROPERTY(EditAnywhere, Category = Setup)
+	float MaxDegreePerSecond = 20;  // Sensible default
+	
+	UPROPERTY(EditAnywhere, Category = Setup)
+	float MinElevationDegree = 0;  // Sensible default
+	
+	UPROPERTY(EditAnywhere, Category = Setup)
+	float MaxElevationDegree = 40;  // Sensible default
+};
