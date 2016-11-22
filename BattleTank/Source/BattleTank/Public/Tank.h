@@ -6,6 +6,7 @@
 #include "Tank.generated.h" // Put new includes above
 
 // Forward Declarations
+class UTankTurret;
 class UTankBarrel;  
 class UTankAimingComponent;
 
@@ -19,6 +20,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
+
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	void SetTurretReference(UTankTurret* TurretToSet);
 
 protected:
 	UTankAimingComponent* TankAimingComponent = nullptr;
@@ -36,6 +40,6 @@ private:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
 	UPROPERTY(EditAnywhere, Category = Firing)
-	float LaunchSpeed = 100000; // TODO find Sensible default - 10000 m/s
+	float LaunchSpeed = 4000; 
 	
 };
